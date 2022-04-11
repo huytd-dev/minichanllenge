@@ -1,0 +1,93 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif; */
+body{
+    background: lightblue;
+}
+
+img{
+    width: 200px;
+    height: 100px;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 50px;
+}
+
+p{
+    font-family: 'Lato',sans-serif;
+}
+li{
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar{
+    background: rgb(230, 191, 107);
+}
+.subtitle{
+
+}
+
+.image-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid > img{
+    margin: 10px;
+}
+
+#image-1{
+    float: right;
+    margin: 10px;
+    height: 150px;
+}
+.post{
+    border: 2px solid rgb(126, 93, 24);
+    margin: 10px;
+    
+}
+
+.post-title{
+    margin-left: 10px;
+}
+.post > p{
+    margin-left: 20px;
+}
+.post > a{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: rgb(10, 110, 55);
+    
+}
+.post > a:hover{
+    color: rgb(84, 235, 184);
+}
+
+.content{
+    animation-name: fade-in;
+    animation-duration: 2s;    
+}
+.sidebar{
+    animation-name: fade-in;
+    animation-duration: 2s;
+}   
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
